@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* Header Background Image */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/sauce.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Nav Code */
+
+nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 160px;
+    align-content: flex-start;
+}
+.nav-menu {
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-menu ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF00FF;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-menu ul li:hover::after {
+    width: 100%;
+    
+}
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 60px;
+}
+.text-box p {
+    margin: 15px 0 35px;
+    font-size: 16px;
+    color: white;
+}
+.info {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 38px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.info:hover {
+    border: 2px solid #FF00FF;
+    background: #FF00FF;
+    transition: 0.7s;
+}
+ /* Media Code */
+@media only screen and (max-width: 849px) {
+    .text-box h1 {
+        font-size: 25px;
+    }
+    .text-box p {
+        font-size: 15px;
+    }
+    .text-box a {
+        font-size: 13px;
+        border: 1px solid white;
+    }
+    section img {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* Intro */
+
+.intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 550;
+}
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    height: 20px;
+    padding: 15px;
+}
+
+.row {
+    margin: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sauce-col {
+    flex-basis: 32%;
+    background: #FF6347;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center;
+    font-weight: 550;
+    margin: 10px 0;
+}
+.sauce-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width:849px) {
+    .row {
+        flex-direction: column;
+    }
+    .intro p {
+        font-size: 50%
+    }
+}
+
+/* Sauces */
+
+.sauces {
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 1%;
+}
+.sa-col {
+    flex-basis: 24%;
+    border-radius: 40px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.sa-col img {
+    width: 100%;
+    justify-content: space-evenly;
+}
+.layer {
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 650;
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3 {
+    bottom: 75%;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 849px) {
+    .layer h3 {
+        font-size: 50%;
+    }
+    .sa-col img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+.contact {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/call.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact h1 {
+    color: white;
+    margin-bottom: 2%;
+    padding: 0;
+}
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 6px;
+    font-weight: 550;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 849px)
+
+
+
+
+/*---- About us Page ---*/
+    
+.sub-header {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/sauce.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align:center;
+        color: white;
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
