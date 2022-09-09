@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style1.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 </head>
+
 <body>
     <section class="header">
         <nav>
@@ -23,19 +26,70 @@
                 </ul>
             </div>
         </nav>
+
+
+
         <div class="text-box">
-           <h1>Contact Us</h1>
+            <h1>Contact Us</h1>
         </div>
     </section>
-    
-<!--- Footer --->
-       
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13221.212688138463!2d18.503751892344685!3d-34.06174176332056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc415040a6980b%3A0xa60c14f8d0b3558f!2sZeekoevlei!5e0!3m2!1sen!2sza!4v1662470778120!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact">
+        <div class=row>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Western Cape, Cape Town, SA</h5>
+                        <p>Grassy Park, Zeekoevlei</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Monday to Friday, 11AM to 6PM</h5>
+                        <p>+27 76 549 3590</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>Email us @</h5>
+                        <p>thesauces@yahoo.com</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <from action="styles/form-handler.php" method ="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <textarea rows="8" name="message"
+                     placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </from>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!--- Footer --->
+
     <section class="footer">
-    <h4>About Us</h4>  
-    <p>We give our honest reviews on sauces that we find and the ones you guys recommend to us.<br>We love what we do and we hope you guys love it too!</p>
-</section>
+        <h4>About Us</h4>
+        <p>We give our honest reviews on sauces that we find and the ones you guys recommend to us.<br>We love what we do and we hope you guys love it too!</p>
+    </section>
     <footer>
         &copy; The Sauce 2022
-    </footer>        
+    </footer>
 </body>
+
 </html>
