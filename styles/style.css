@@ -7,7 +7,7 @@
 /* Header Background Image */
 
 .header {
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/sauce.jpg);
     background-position: center;
@@ -34,7 +34,7 @@ nav img {
 .nav-menu ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 4px 10px;
     position: relative;
 }
 .nav-menu ul li a {
@@ -45,7 +45,7 @@ nav img {
 .nav-menu ul li::after {
     content: '';
     width: 0%;
-    height: 2px;
+    height: 3px;
     background: #FF00FF;
     display: block;
     margin: auto;
@@ -107,19 +107,19 @@ nav img {
 /* Intro */
 
 .intro {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 85px;
+    padding-top: 1px;
 }
 h1 {
-    font-size: 35px;
-    font-weight: 550;
+    font-size: 37px;
+    font-weight: 500;
 }
 p {
     color: black;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     height: 20px;
     padding: 15px;
 }
@@ -127,13 +127,13 @@ p {
 .row {
     margin: 1%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .sauce-col {
     flex-basis: 32%;
     background: #FF6347;
     border-radius: 10px;
-    margin-bottom: 3%;
+    margin-bottom: 1px;
     padding: 20px 12px;
     box-sizing: border-box;
 }
@@ -151,7 +151,7 @@ h3 {
         flex-direction: column;
     }
     .intro p {
-        font-size: 50%
+        font-size: 60%
     }
 }
 
@@ -159,19 +159,19 @@ h3 {
 
 .sauces {
     width: 100%;
-    margin: 5px;
+    margin: 0.5px;
     text-align: center;
-    padding: 1%;
+    padding: .25em;
 }
 .sa-col {
     flex-basis: 24%;
-    border-radius: 40px;
-    margin-bottom: 25px;
+    border-radius: 50px;
+    margin-bottom: 2px;
     position: relative;
     overflow: hidden;
 }
 .sa-col img {
-    width: 100%;
+    width: 55%;
     justify-content: space-evenly;
 }
 .layer {
@@ -212,13 +212,13 @@ h3 {
 
 
 .contact {
-    margin: 100px auto;
+    margin: 15px auto;
     width: 80%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/call.png);
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .contact h1 {
     color: white;
